@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.banner{
+    display: block;
+    background: #ccc;
+    width: 650px;
+    height: 176px;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image:
+    url('./water1.png'),
+    url('./water.GIF');
+    background-position: 0 0,right top;
+    background-size: contain , cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    top: -70px;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+@keyframes logo {
+    0%{right: -800px;}
+    10%{right: -10px;}
+    100%{}
+}
+
+.btn{
+    position: absolute;
+    left: 338px;
+    top: 128px;
+    width: 82px;
+    height: 28px;
+    background: rgb(213, 34, 79);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border-radius: 50%;
+}
